@@ -14,8 +14,8 @@ namespace FindBob
             int count = FindBobCountByRegex();
             Console.WriteLine($"result of {nameof(FindBobCountByRegex)}:{count}");
 
-            count = FindBobCountByStraightForward();
-            Console.WriteLine($"result of {nameof(FindBobCountByStraightForward)}:{count}");
+            count = FindBobCountByLoop();
+            Console.WriteLine($"result of {nameof(FindBobCountByLoop)}:{count}");
             Console.ReadKey();
         }
 
@@ -31,9 +31,9 @@ namespace FindBob
         }
 
         /// <summary>
-        /// Find Count of 'bob' in string by using Straight Forward
+        /// Find Count of 'bob' in string by using Loop
         /// </summary>
-        public static int FindBobCountByStraightForward()
+        public static int FindBobCountByLoop()
         {
             string testStr = "hi! bob is my friend.bob is a programmer";
             int count = 0;
